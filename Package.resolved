@@ -1,0 +1,97 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CollectionConcurrencyKit",
+        "repositoryURL": "https://github.com/davdroman/CollectionConcurrencyKit",
+        "state": {
+          "branch": "main",
+          "revision": "45c4ac8362c2028549fdb3ef5529107909383d4f",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-algorithms",
+        "repositoryURL": "https://github.com/apple/swift-algorithms",
+        "state": {
+          "branch": null,
+          "revision": "b14b7f4c528c942f121c8b860b9410b2bf57825e",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "swift-case-paths",
+        "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
+        "state": {
+          "branch": null,
+          "revision": "d226d167bd4a68b51e352af5655c92bce8ee0463",
+          "version": "0.7.0"
+        }
+      },
+      {
+        "package": "swift-custom-dump",
+        "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
+        "state": {
+          "branch": null,
+          "revision": "51698ece74ecf31959d3fa81733f0a5363ef1b4e",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "swift-nonempty",
+        "repositoryURL": "https://github.com/pointfreeco/swift-nonempty",
+        "state": {
+          "branch": null,
+          "revision": "8074e5f2e4a6de5a42476e545cc33438021aa2a4",
+          "version": "0.4.0"
+        }
+      },
+      {
+        "package": "swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics",
+        "state": {
+          "branch": null,
+          "revision": "0a5bc04095a675662cf24757cc0640aa2204253b",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "swift-tagged",
+        "repositoryURL": "https://github.com/pointfreeco/swift-tagged",
+        "state": {
+          "branch": null,
+          "revision": "6c36cf66f58553d0481a2628e3e27177f698a897",
+          "version": "0.6.0"
+        }
+      },
+      {
+        "package": "TestableAssert",
+        "repositoryURL": "https://github.com/vinceplusplus/TestableAssert",
+        "state": {
+          "branch": null,
+          "revision": "5648a41c8b6c3c8a5ef5637968f896df63b6bf09",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "TestableAssertSupport",
+        "repositoryURL": "https://github.com/vinceplusplus/TestableAssertSupport",
+        "state": {
+          "branch": null,
+          "revision": "89ee981347f3c75511011a1657b2043e6ac0eb62",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "xctest-dynamic-overlay",
+        "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
+        "state": {
+          "branch": null,
+          "revision": "50a70a9d3583fe228ce672e8923010c8df2deddd",
+          "version": "0.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
