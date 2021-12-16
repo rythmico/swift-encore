@@ -10,5 +10,6 @@
 @_exported import EnumTag
 @_exported import NilGuardingOperators
 @_exported import NonEmpty
+@_exported import RuntimeError
 @_exported import Tagged
 @_exported import UnwrapTuple

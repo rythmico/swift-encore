@@ -2,7 +2,7 @@ import SwiftEncore
 import XCTest
 
 final class ResultEncoreTests: XCTestCase {
-    typealias Result = Swift.Result<Int, String>
+    typealias Result = Swift.Result<Int, RuntimeError>
 
     func testInitWithValueAndError() {
         XCTAssertEqual(Result(value: 3, error: "Error"), .success(3))

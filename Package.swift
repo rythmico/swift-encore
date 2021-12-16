@@ -24,6 +24,7 @@ let package = Package(
             .target(name: "EnumTag"),
             .target(name: "NilGuardingOperators"),
             .product(name: "NonEmpty", package: "swift-nonempty"),
+            .target(name: "RuntimeError"),
             .product(name: "Tagged", package: "swift-tagged"),
             .target(name: "UnwrapTuple"),
         ]),
@@ -52,6 +53,11 @@ let package = Package(
         .testTarget(name: "NilGuardingOperatorsTests", dependencies: [
             .target(name: "NilGuardingOperators"),
             .product(name: "TestableAssert", package: "TestableAssert"),
+        ]),
+
+        .target(name: "RuntimeError"),
+        .testTarget(name: "RuntimeErrorTests", dependencies: [
+            .target(name: "RuntimeError"),
         ]),
 
         .target(name: "UnwrapTuple", exclude: ["UnwrapTuple.swift.gyb"]),
