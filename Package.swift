@@ -65,7 +65,7 @@ let package = Package(
 )
 
 package.dependencies = [
-    .package(name: "CollectionConcurrencyKit", url: "https://github.com/davdroman/CollectionConcurrencyKit", branch: "main"),
+    .package(name: "CollectionConcurrencyKit", url: "https://github.com/JohnSundell/CollectionConcurrencyKit", from: "0.2.0"),
     .package(name: "swift-algorithms", url: "https://github.com/apple/swift-algorithms", from: "1.0.0"),
     .package(name: "swift-case-paths", url: "https://github.com/pointfreeco/swift-case-paths", from: "0.7.0"),
     .package(name: "swift-custom-dump", url: "https://github.com/pointfreeco/swift-custom-dump", from: "0.2.1"),
