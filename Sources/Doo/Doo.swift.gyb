@@ -9,15 +9,15 @@ infix operator => : DooPrecedence
 // MARK: - Doo (Value Types) -
 % for is_async in [False, True]:
 % availability = "\n".join(["", "@available(macOS 12, iOS 15, watchOS 8, tvOS 15, *)"]) if is_async else ""
-% async = " async " if is_async else " "
-% await = " await " if is_async else " "
+% async_label = " async " if is_async else " "
+% await_label = " await " if is_async else " "
 ${availability}
 @_disfavoredOverload
 @discardableResult
 @inlinable
-public func => <Subject>(subject: Subject, do: (inout Subject)${async}throws -> Void)${async}rethrows -> Subject {
+public func => <Subject>(subject: Subject, do: (inout Subject)${async_label}throws -> Void)${async_label}rethrows -> Subject {
     var copy = subject
-    try${await}`do`(&copy)
+    try${await_label}`do`(&copy)
     return copy
 }
 % end
@@ -25,13 +25,13 @@ public func => <Subject>(subject: Subject, do: (inout Subject)${async}throws -> 
 // MARK: - Doo (Reference Types) -
 % for is_async in [False, True]:
 % availability = "\n".join(["", "@available(macOS 12, iOS 15, watchOS 8, tvOS 15, *)"]) if is_async else ""
-% async = " async " if is_async else " "
-% await = " await " if is_async else " "
+% async_label = " async " if is_async else " "
+% await_label = " await " if is_async else " "
 ${availability}
 @discardableResult
 @inlinable
-public func => <Subject: AnyObject>(subject: Subject, do: (Subject)${async}throws -> Void)${async}rethrows -> Subject {
-    try${await}`do`(subject)
+public func => <Subject: AnyObject>(subject: Subject, do: (Subject)${async_label}throws -> Void)${async_label}rethrows -> Subject {
+    try${await_label}`do`(subject)
     return subject
 }
 % end
