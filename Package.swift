@@ -32,6 +32,7 @@ let package = Package(
             .target(name: "SwiftEncore"),
         ]),
 
+        // TODO: remove after v2
         .target(name: "AnyEquatable"),
         .testTarget(name: "AnyEquatableTests", dependencies: [
             .target(name: "AnyEquatable"),
@@ -47,6 +48,7 @@ let package = Package(
             .target(name: "Doo"),
         ]),
 
+        // TODO: remove after v2
         .target(name: "EnumTag"),
 
         .target(name: "NilGuardingOperators"),
