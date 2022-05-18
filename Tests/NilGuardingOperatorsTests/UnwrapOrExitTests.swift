@@ -1,5 +1,5 @@
+import ErrorAssertionExpectations
 import NilGuardingOperators
-import TestableAssert
 import XCTest
 
 final class UnwrapOrExitTests: XCTestCase {
@@ -73,7 +73,7 @@ private extension UnwrapOrExitTests {
         line: UInt = #line,
         _ closure: @escaping () -> DiscardedResult
     ) {
-        expectFatalError({ _ = closure() }, file: file, line: line)
+        expectFatalError(file: file, line: line) { _ = closure() }
     }
 
     func XCTAssertNoExit<ExpectedResult: Equatable>(
@@ -82,7 +82,9 @@ private extension UnwrapOrExitTests {
         line: UInt = #line,
         _ closure: @escaping () -> ExpectedResult
     ) {
-        let result = closure()
-        XCTAssertEqual(result, expectedResult)
+        expectNoFatalError(file: file, line: line) {
+            let result = closure()
+            XCTAssertEqual(result, expectedResult, file: file, line: line)
+        }
     }
 }

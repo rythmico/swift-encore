@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "errorassertions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SlaunchaMan/ErrorAssertions",
+      "state" : {
+        "revision" : "fe2b592844372f361f2a33bbbce6a48481b6c79e",
+        "version" : "0.4.0"
+      }
+    },
+    {
       "identity" : "swift-algorithms",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-algorithms",
@@ -61,24 +70,6 @@
       "state" : {
         "revision" : "f3f773a5e13f3c8f0ab1ce2ae6378058acefa87d",
         "version" : "0.7.0"
-      }
-    },
-    {
-      "identity" : "testableassert",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/vinceplusplus/TestableAssert",
-      "state" : {
-        "revision" : "5648a41c8b6c3c8a5ef5637968f896df63b6bf09",
-        "version" : "1.0.2"
-      }
-    },
-    {
-      "identity" : "testableassertsupport",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/vinceplusplus/TestableAssertSupport",
-      "state" : {
-        "revision" : "89ee981347f3c75511011a1657b2043e6ac0eb62",
-        "version" : "1.0.1"
       }
     },
     {

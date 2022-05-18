@@ -54,7 +54,8 @@ let package = Package(
         .target(name: "NilGuardingOperators"),
         .testTarget(name: "NilGuardingOperatorsTests", dependencies: [
             .target(name: "NilGuardingOperators"),
-            .product(name: "TestableAssert", package: "TestableAssert"),
+            .product(name: "ErrorAssertions", package: "ErrorAssertions"),
+            .product(name: "ErrorAssertionExpectations", package: "ErrorAssertions"),
         ]),
 
         .target(name: "RuntimeError"),
@@ -68,10 +69,10 @@ let package = Package(
 
 package.dependencies = [
     .package(url: "https://github.com/JohnSundell/CollectionConcurrencyKit", from: "0.2.0"),
+    .package(url: "https://github.com/SlaunchaMan/ErrorAssertions", from: "0.4.0"),
     .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0"),
     .package(url: "https://github.com/pointfreeco/swift-case-paths", from: "0.7.0"),
     .package(url: "https://github.com/pointfreeco/swift-custom-dump", from: "0.2.1"),
     .package(url: "https://github.com/pointfreeco/swift-nonempty", from: "0.3.1"),
     .package(url: "https://github.com/pointfreeco/swift-tagged", from: "0.6.0"),
-    .package(url: "https://github.com/vinceplusplus/TestableAssert", from: "1.0.0"),
 ]
